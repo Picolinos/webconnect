@@ -1557,8 +1557,8 @@ body {
 
 #afui.android {
 	font:14px  'Roboto',sans-serif;
- 	background:#000;
- 	color:#fff;
+ 	background:#fff;
+ 	color:#000;
     border-color:#fff;
 }
 
