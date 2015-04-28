@@ -50,7 +50,13 @@
         });
                 
         function signIn(){
-            window.location.replace("home.html");
+            var username = $("#username").val();
+            var password = $("#password").val();
+            if(username == 'admin' && password=='admin'){
+                window.location.replace("home.html");
+            }else{
+                $("#error").html("Usuário ou senha inválidos");
+            }
         }
                 
         function signUp(){
@@ -85,16 +91,16 @@
         </div>
         
         <!-- Login View -->
-        <div class="panel" title="Login" id="signin" data-footer="none">
-            <div style="text-align:center">
+        <div class="painel" title="Login" id="signin" data-footer="none">
+            <header>
+                <a id="backButton" class="button voltarButton">Voltar</a>
+                <h1>Login</h1>
+            </header>
             <br>
+            <p class='error' id='error'></p>
             <br>
-            <p>This is space for login message</p>
-            <br>
-            <br>
-            </div>
-            <input name="username" type="text" placeholder="username" />
-            <input name="password" type="password" placeholder="password" />
+            <input name="username" id='username' type="text" placeholder="username" />
+            <input name="password" id='password' type="password" placeholder="password" />
             <a class="button block green" href="#" id="login">Login</a>
         </div>
         
