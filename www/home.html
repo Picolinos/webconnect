@@ -7,7 +7,7 @@
     
     <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
     <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
-    <link rel="stylesheet" type="text/css" href="css/list.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
 
     <!-- phantom library, needed for XDK "legacy" container api calls -->
@@ -16,17 +16,22 @@
     <script src="cordova.js"></script>
     <!-- phantom library, needed for XDK "legacy" container CORS -->
     <script src="xhr.js"></script>
-     
 </head>
 <body>  
-     <div class="panel" title="Home" id="home" data-footer="none" selected="true">
-            <ul class="list widget " data-uib="app_framework/listview" data-ver="1">
+     <div class="panel"  data-footer="none" selected="true">
+        <header>
+            <a id="backButton" class="button backButton">Voltar</a>
+            <h1>Home</h1>
+            <a id="homeButton" class="button homeButton">Home</a>
+        </header>
+        <br>   
+            <ul class="list inset">
                 <li class="widget uib_w_8" data-uib="app_framework/listitem" data-ver="1">
                     <a href="#uib_page_1" data-transition="fade">Perto de mim</a>
                 </li>
             </ul>
             <br>
-            <ul class="list widget " data-uib="app_framework/listview" data-ver="2">
+               <ul class="list inset">
                 <li class="widget uib_w_7" data-uib="app_framework/listitem" data-ver="1">
                     <a href="#uib_page_2" data-transition="fade">Restaurantes</a>
                 </li>
@@ -44,7 +49,7 @@
                 </li>
             </ul>
             <br>
-            <ul class="list widget " data-uib="app_framework/listview" data-ver="2">
+              <ul class="list inset">
                 <li class="widget uib_w_5" data-uib="app_framework/listitem" data-ver="1">
                     <a href="#uib_page_6" data-transition="fade">Meu perfil</a>
                 </li>
