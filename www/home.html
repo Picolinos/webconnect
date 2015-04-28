@@ -1,14 +1,57 @@
-<ul class="list widget uib_w_2 d-margins" data-uib="app_framework/listview" data-ver="1">
-                                <li class="widget uib_w_8" data-uib="app_framework/listitem" data-ver="1"><a href="#uib_page_1" data-transition="fade">List Item</a>
-                                </li>
-                                <li class="widget uib_w_7" data-uib="app_framework/listitem" data-ver="1"><a href="#uib_page_2" data-transition="fade">List Item</a>
-                                </li>
-                                <li class="widget uib_w_6" data-uib="app_framework/listitem" data-ver="1"><a href="#uib_page_3" data-transition="fade">List Item</a>
-                                </li>
-                                <li class="widget uib_w_3" data-uib="app_framework/listitem" data-ver="1"><a href="#uib_page_4" data-transition="fade">List Item</a>
-                                </li>
-                                <li class="widget uib_w_4" data-uib="app_framework/listitem" data-ver="1"><a href="#uib_page_5" data-transition="fade">List Item</a>
-                                </li>
-                                <li class="widget uib_w_5" data-uib="app_framework/listitem" data-ver="1"><a href="#uib_page_6" data-transition="fade">List Item</a>
-                                </li>
-                            </ul>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/list.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+
+    <!-- phantom library, needed for XDK "legacy" container api calls -->
+    <script src="intelxdk.js"></script>
+    <!-- phantom library, needed for Cordova api calls -->
+    <script src="cordova.js"></script>
+    <!-- phantom library, needed for XDK "legacy" container CORS -->
+    <script src="xhr.js"></script>
+     
+</head>
+<body>  
+     <div class="panel" title="Home" id="home" data-footer="none" selected="true">
+            <ul class="list widget " data-uib="app_framework/listview" data-ver="1">
+                <li class="widget uib_w_8" data-uib="app_framework/listitem" data-ver="1">
+                    <a href="#uib_page_1" data-transition="fade">Perto de mim</a>
+                </li>
+            </ul>
+            <br>
+            <ul class="list widget " data-uib="app_framework/listview" data-ver="2">
+                <li class="widget uib_w_7" data-uib="app_framework/listitem" data-ver="1">
+                    <a href="#uib_page_2" data-transition="fade">Restaurantes</a>
+                </li>
+                <li class="widget uib_w_6" data-uib="app_framework/listitem" data-ver="1">
+                    <a href="#uib_page_3" data-transition="fade">Show</a>
+                </li>
+                <li class="widget uib_w_3" data-uib="app_framework/listitem" data-ver="1">
+                    <a href="#uib_page_4" data-transition="fade">Baladas</a>
+                </li>
+                <li class="widget uib_w_4" data-uib="app_framework/listitem" data-ver="1">
+                    <a href="#uib_page_5" data-transition="fade">Loren ipsum</a>
+                </li>
+                <li class="widget uib_w_5" data-uib="app_framework/listitem" data-ver="1">
+                    <a href="#uib_page_6" data-transition="fade">Loren ipsum</a>
+                </li>
+            </ul>
+            <br>
+            <ul class="list widget " data-uib="app_framework/listview" data-ver="2">
+                <li class="widget uib_w_5" data-uib="app_framework/listitem" data-ver="1">
+                    <a href="#uib_page_6" data-transition="fade">Meu perfil</a>
+                </li>
+                <li class="widget uib_w_5" data-uib="app_framework/listitem" data-ver="1">
+                    <a href="#uib_page_6" data-transition="fade">Favoritos</a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
