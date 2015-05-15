@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filtros</title>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/action.js"></script>
+
+    <!-- phantom library, needed for XDK "legacy" container api calls -->
+    <script src="intelxdk.js"></script>
+    <!-- phantom library, needed for Cordova api calls -->
+    <script src="cordova.js"></script>
+    <!-- phantom library, needed for XDK "legacy" container CORS -->
+    <script src="xhr.js"></script>
+</head>
+<body>  
+    <header>
+        <a href='home.html'  class="button voltarButton">Voltar</a>
+        <h1>Home</h1>
+        <a href='home.html'  class="button homeButton">Home</a>
+    </header>
+    <br>   
+     <div class='selectedEvent'>
+        Selcionado: 
+     </div>
+            Escolha por:
+           <ul class="list inset">
+            <li class="widget uib_w_7" data-uib="app_framework/listitem" data-ver="1">
+                <a href="#uib_page_2" data-transition="fade">
+                    Localização:<br>
+                    <div class='selectedFilter'>Selected</div>
+                </a>
+            </li>
+            <li class="widget uib_w_6" data-uib="app_framework/listitem" data-ver="1">
+                <a href="#uib_page_3" data-transition="fade">Show</a>
+            </li>
+            <li class="widget uib_w_3" data-uib="app_framework/listitem" data-ver="1">
+                <a href="#uib_page_4" data-transition="fade">Baladas</a>
+            </li>
+            <li class="widget uib_w_4" data-uib="app_framework/listitem" data-ver="1">
+                <a href="#uib_page_5" data-transition="fade">Cinema </a>
+            </li>
+            <li class="widget uib_w_5" data-uib="app_framework/listitem" data-ver="1">
+                <a href="#uib_page_6" data-transition="fade">Teatro</a>
+            </li>
+        </ul>
+        <br>
+        <div class='btn filtrar'>
+            Buscar
+        </div> 
+         
+</body>
+</html>
