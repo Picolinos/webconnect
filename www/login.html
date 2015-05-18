@@ -11,12 +11,7 @@
     <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
-    <!-- phantom library, needed for XDK "legacy" container api calls -->
-    <script src="intelxdk.js"></script>
-    <!-- phantom library, needed for Cordova api calls -->
-    <script src="cordova.js"></script>
-    <!-- phantom library, needed for XDK "legacy" container CORS -->
-    <script src="xhr.js"></script>
+    <script src="intelxdk.js"></script><script src="cordova.js"></script><script src="xhr.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/action.js"></script>
     <script>
         var onDeviceReady=function(){                             // called when Cordova is ready
@@ -28,8 +23,6 @@
                 }, 2000); 
             }
         };
-       
-       
         document.addEventListener("deviceready", onDeviceReady, false) ;
        
     </script>
@@ -125,7 +118,7 @@
         </div>
         
         <!-- Main App View -->
-        <div class="panel import" title="Home" id="http://www.eduardoalvarez.com.br"  >teste1</div>
+        <div class="panel import" title="Home" id="home"  >teste1</div>
         
         <!-- Favorito App View -->
         <div class="panel import" title="Favorito" id="favoritos" >teste2</div>
