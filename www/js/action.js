@@ -2,13 +2,12 @@ $(function(){
     $("div.import").each(function(){
         var _self = $(this);
         var page = _self.attr('id')+".html";
-        var pagina = $.get(page);
-        var html =  pagina.responseText;
-        var html1 = pagina.response;
-        var html2 = pagina.response;
-        console.log("---"+html1+"---");
-        console.log("---"+html2+"---");
-        _self.html(html1);
+        $.get(page, function( data ) {
+          _self.html( data );
+        });
     });
-   
+    $("a.import").click(function(e){
+        e.preventDefault();
+        console.log('teste');
+    });
 });
