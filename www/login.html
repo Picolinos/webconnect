@@ -11,14 +11,13 @@
     <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
-
     <!-- phantom library, needed for XDK "legacy" container api calls -->
     <script src="intelxdk.js"></script>
     <!-- phantom library, needed for Cordova api calls -->
     <script src="cordova.js"></script>
     <!-- phantom library, needed for XDK "legacy" container CORS -->
     <script src="xhr.js"></script>
-
+    <script type="text/javascript" charset="utf-8" src="js/action.js"></script>
     <script>
         var onDeviceReady=function(){                             // called when Cordova is ready
            navigator.splashscreen.show();
@@ -28,8 +27,11 @@
                     navigator.splashscreen.hide();
                 }, 2000); 
             }
-        } ;
+        };
+       
+       
         document.addEventListener("deviceready", onDeviceReady, false) ;
+       
     </script>
     
     <script>   
@@ -53,7 +55,8 @@
             var username = $("#username").val();
             var password = $("#password").val();
             if(username == 'admin' && password=='admin'){
-                window.location.replace("home.html");
+                //window.location.replace("home.html");
+                $.ui.loadContent("home", null, null, "fade");
             }else{
                 $("#error").html("Usuario ou senha invalidos");
             }
@@ -122,9 +125,10 @@
         </div>
         
         <!-- Main App View -->
-        <div class="panel" title="Start" id="main" data-load="startApp">
-            <p>This is App page after user has signed in...</p>
-        </div>
+        <div class="panel import" title="Home" id="http://www.eduardoalvarez.com.br"  >teste1</div>
+        
+        <!-- Favorito App View -->
+        <div class="panel import" title="Favorito" id="favoritos" >teste2</div>
         
     </div>
 
