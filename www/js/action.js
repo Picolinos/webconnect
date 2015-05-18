@@ -2,7 +2,7 @@ $(function(){
     $("div.import").each(function(){
         var _self = $(this);
         var page = _self.attr('id')+".html";
-        var pagina = $.get(page);
+        var pagina = $.getJSON(page);
         var html =  pagina.responseText;
         var html1 = pagina.response;
         var html2 = pagina.response;
