@@ -11,8 +11,9 @@
     <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
-    <script src="intelxdk.js"></script>  
+    <!--<script src="intelxdk.js"></script>  -->
     <script type="text/javascript" charset="utf-8" src="js/action.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/login.js"></script>
     <script>
         var onDeviceReady=function(){                             // called when Cordova is ready
            navigator.splashscreen.show();
@@ -24,42 +25,7 @@
             }
         };
         document.addEventListener("deviceready", onDeviceReady, false) ;
-       
     </script>
-    
-    <script>   
-        $.ui.autoLaunch = false; 
-        $.ui.backButtonText = "Voltar";
-    
-        $(document).ready(function(){
-            $.ui.launch();
-            
-            // setup signin and signup button events
-            $("#login").on("click", function(){
-                signIn();
-            });
-            
-            $("#register").on("click", function(){
-                signUp();
-            });
-        });
-                
-        function signIn(){
-            var username = $("#username").val();
-            var password = $("#password").val();
-            if(username == 'admin' && password=='admin'){
-                //window.location.replace("home.html");
-                $.ui.loadContent("home", null, null, "fade");
-            }else{
-                $("#error").html("Usuario ou senha invalidos");
-            }
-        }
-                
-        function signUp(){
-            // signup code here
-            $.ui.loadContent("main", null, null, "fade");
-        }   
-    </script>   
 </head>
 <body> 
 <div id="afui">
@@ -67,7 +33,6 @@
     <!-- Views -->
         <!-- Welcome View -->
         <div class="panel" title="Bem Vindo" id="page1" data-header="none" data-footer="none" selected="true">
-
             <div style="text-align:center">
             <br>
             <br>
@@ -102,13 +67,6 @@
         
         <!-- Register View -->
         <div class="panel" title="Cadastrar-se" id="signup" data-footer="none">
-            <!--div style="text-align:center">
-            <br>
-            <br>
-            <p>This is space for register message</p>
-            <br>
-            <br>
-            </div-->
             <input name="name" type="text" placeholder="Name" />
             <input name="email" type="text" placeholder="Email" />
             <input name="username" type="text" placeholder="username" />
@@ -122,6 +80,9 @@
         
         <!-- Favorito App View -->
         <div class="panel import" title="Favorito" id="favoritos" >teste2</div>
+        
+        <!-- Favorito App View -->
+        <div class="panel import" title="Meu Perfil" id="meu_perfil" >teste3</div>
         
     </div>
 
