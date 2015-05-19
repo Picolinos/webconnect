@@ -10,7 +10,11 @@ $(document).ready(function(){
     $("#register").on("click", function(){
         signUp();
     });
-    $("#username")
+    $("#username , #password").keyup(function(e){
+        if(e.keyCode == 13){
+          signIn();
+        }
+    })
 });
 function signIn(){
     var username = $("#username").val();
