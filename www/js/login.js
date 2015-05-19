@@ -7,10 +7,10 @@ $(document).ready(function(){
     $("#login").on("click", function(){
         signIn();
     });
-
     $("#register").on("click", function(){
         signUp();
     });
+    $("#username")
 });
 function signIn(){
     var username = $("#username").val();
