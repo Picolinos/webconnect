@@ -39,3 +39,8 @@ header{
     color: red;
     font-size: 150%;
 }
+.box{
+    border:1px solid lightgray;
+    padding:3px;
+    margin-top:5px;
+}
