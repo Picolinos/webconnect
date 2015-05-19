@@ -8,5 +8,11 @@ $(function(){
         });
         
     });
+    setTimeout(function(){
+        $(".popup").click(function(){
+            var pop = $("#"+$(this).attr('rel'));
+            pop.show();
+        });
+    },2000);
 });
 
