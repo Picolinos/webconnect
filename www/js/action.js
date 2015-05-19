@@ -6,11 +6,13 @@ $(function(){
           _self.html( data );
         });
     });
-    $("a.import").click(function(e){
-        e.preventDefault();
-        var _self = $(this);
-        var page = _self.rel('href');
-        $.ui.loadContent(page, null, null, "fade");
+    $(".import").each(function(){
+        $(this).click(function(e){
+            e.preventDefault();
+            var _self = $(this);
+            var page = _self.rel('rel');
+            $.ui.loadContent(page, null, null, "fade");
+        });
     });
 });
 
