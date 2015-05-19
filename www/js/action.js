@@ -8,6 +8,8 @@ $(function(){
     });
     $("a.import").click(function(e){
         e.preventDefault();
-        console.log('teste');
+        var _self = $(this);
+        var page = _self.rel('href');
+        $.ui.loadContent(page, null, null, "fade");
     });
 });
