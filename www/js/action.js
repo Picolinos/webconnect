@@ -14,7 +14,7 @@ $(function(){
             var pop = $("#"+$(this).attr('rel'));
             addOverlay(pop);
             addBtns(pop);
-            pop.show();
+            pop.show("slow");
         });
     },2000);
     function addOverlay(pop){

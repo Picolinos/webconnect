@@ -169,7 +169,7 @@ li .icon:before {
 }
 .icon.lamp:before {
 	content: "\e008";
-}
+} 
 .icon.tools:before {
 	content: "\e009";
 }

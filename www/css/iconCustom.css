@@ -1,0 +1,27 @@
+.iconCustom:before {
+    position: relative;
+    content: " ";
+    padding-left: 24px;
+    top: 3px;
+    line-height: 0 !important;
+    margin-right: 4px;
+    padding-top: 8px;
+}
+.iconCustom.teatro:before{
+    background-image:url(../css/mask2.png);
+}
+.iconCustom.movie:before{
+    background-image:url(../css/movie.png);
+}
+.iconCustom.guitar:before{
+    background-image:url(../css/guitar.png);
+}
+.iconCustom.food:before{
+    background-image:url(../css/food.png);
+}
+.iconCustom.balada2:before{
+    background-image:url(../css/balada2.png);
+}
+.iconCustom.event:before{
+    background-image:url(../css/event.png);
+}
