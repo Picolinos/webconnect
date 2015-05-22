@@ -1,4 +1,6 @@
 $(function(){
+    
+    
     $("div.import").each(function(){
         var _self = $(this);
         var page = _self.attr('id')+".html";
@@ -50,3 +52,22 @@ $(function(){
     }
 });
 
+
+
+$(function(){
+    var scrollStartPos=0;
+
+    $(".panel").on("touchstart", function(event) {
+        scrollStartPos=this.scrollTop+event.touches[0].pageY;
+        event.stopPropagation();
+    },false);
+
+    $(".panel").on("touchmove", function(event) {
+        this.scrollTop=scrollStartPos-event.touches[0].pageY;
+        event.preventDefault();
+    },false);
+    
+    $(".panel").on("touchend", function(event) {
+        //seriaalgumacoisaaqui
+    },false);
+});
