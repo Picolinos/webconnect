@@ -19,14 +19,21 @@ $(document).ready(function(){
 function signIn(){
     var username = $("#username").val();
     var password = $("#password").val();
-    if(username == 'admin' && password=='admin'){
-        //window.location.replace("home.html");
-        $.ui.backButtonText = "Logout";
-        $.ui.loadContent("home", null, null, "fade");
-        $.ui.backButtonText = "Voltar";
-    }else{
-        $("#error").html("Usuario ou senha invalidos");
-    }
+    var user = "";
+    $.get("http://www.eduardoalvarez.com.br/webconnect/projeto/ajax/ajaxDispatcher.php?classe=userBusiness&metodo=getUserByLoginAndPass&login="+username+"&senha="+password, function( data ) {
+        user = JSON.parse(data);
+        if(user != false){
+            $.ui.backButtonText = "Logout";
+            $.ui.loadContent("home", null, null, "fade");
+            putPerfilName(user.nome);
+            $.ui.backButtonText = "Voltar";    
+        }else{
+            $("#error").html("Usuário ou senha inválidos");
+        }
+    });
+}
+function putPerfilName(nome){
+    $("#meu_perfil").html(nome);
 }
 function signUp(){
     $.ui.loadContent("main", null, null, "fade");
