@@ -1,8 +1,6 @@
 <?php
 
-class userBusiness 
-
-{
+class userBusiness{
 
 	public static function getUserByLoginAndPass($args) {
 		$login = $args['login'];
