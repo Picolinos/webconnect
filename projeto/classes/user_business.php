@@ -1,6 +1,6 @@
 <?php
 
-class eventoBusiness 
+class userBusiness 
 
 {
 
