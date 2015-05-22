@@ -9,6 +9,7 @@ $(document).ready(function(){
     });
     $("#register").on("click", function(){
         signUp();
+        
     });
     $("#username , #password").keyup(function(e){
         if(e.keyCode == 13){
@@ -36,5 +37,14 @@ function putPerfilName(nome){
     $("#meu_perfil").html(nome);
 }
 function signUp(){
-    $.ui.loadContent("main", null, null, "fade");
+    var username = $("#username_user").val();
+    var password = $("#password_user").val();
+    var nome = $("#nome_user").val();
+    var email = $("#email_user").val();
+    $.get("http://www.eduardoalvarez.com.br/webconnect/projeto/ajax/ajaxDispatcher.php?classe=userBusiness&metodo=persistUser&login="+username+"&senha="+password+"&nome="+nome+"email="+email, function( data ) {
+        if(json_encode(data) == true){
+            $.ui.loadContent("main", null, null, "fade");    
+            alert('Usuario cadastrado com sucesso! \o');
+        }
+    });
 }   

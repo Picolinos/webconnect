@@ -14,7 +14,7 @@ class userBusiness{
 		if($user['id_user'] != ""){ 
 			$user = dbManager::getEntityByFilter(new Usuarios(), $id_user);
 		}else{
-			$user = new Usuario();
+			$user = new Usuarios();
 		}
 		$nome = $args['nome'];
 		$login = $args['login'];
