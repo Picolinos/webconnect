@@ -41,10 +41,8 @@ function signUp(){
     var password = $("#password_user").val();
     var nome = $("#nome_user").val();
     var email = $("#email_user").val();
-    $.get("http://www.eduardoalvarez.com.br/webconnect/projeto/ajax/ajaxDispatcher.php?classe=userBusiness&metodo=persistUser&login="+username+"&senha="+password+"&nome="+nome+"email="+email, function( data ) {
-        if(json_encode(data) == true){
-            $.ui.loadContent("main", null, null, "fade");    
-            alert('Usuario cadastrado com sucesso! \o');
-        }
+    $.get("http://www.eduardoalvarez.com.br/webconnect/projeto/ajax/ajaxDispatcher.php?classe=userBusiness&metodo=persistUser&login="+username+"&senha="+password+"&nome="+nome+"&email="+email, function( data ) {
+        $.ui.loadContent("main", null, null, "fade");    
+        $('#sucess_user').html('Usuario cadastrado com sucesso!');
     });
 }   
