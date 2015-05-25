@@ -1,4 +1,4 @@
-
+<a class="button botao filtros" href="#eventos">Aplicar</a>
 <br>
     <div class='selectedEvent'>
         <!--Selecionado:--> 
@@ -7,7 +7,7 @@
     <!--Escolha por:-->
    <ul class="list inset">
     <li class="widget uib_w_7" data-uib="app_framework/listitem" data-ver="1">
-        <a href="#uib_page_2" data-transition="fade">
+        <a href='#' class="popup" rel='localizacao' >
             Localização:<br>
             <div class='selectedFilter'>Minha localização</div>
         </a>
@@ -28,30 +28,56 @@
 
 
 <div  id="preco" class='popup-content'>
-  <div class='popup-title'>Preço</div>
-  <p>Selecione seu preço</p>
+    <div class='popup-title'>Preço</div>
+    <br>
+    Selecionado: 
+    De: <input id="movie" type="number" value="0"/><br>
+    Até: <input id="movie" type="number" value="120"/>
+        
+</div>
+<div  id="localizacao" class='popup-content'>
+  <div class='popup-title'>Localização</div>
+    <p>Selecione a distancia:
+      <select>
+        <option selected>Minha localização</option>
+        <option>3km</option>
+        <option>5km</option>
+        <option>10km</option>
+      </select> 
 </div>
 <div  id="categoria" class='popup-content'>
   <div class='popup-title'>Categoria</div>
-  <p>Selecione sua categoria:<br>Japonês<br>Indiano<br>Árabe<br>Chinês<br>Italiano<br>Português<br>Francês<br>Alemão<br>Grego<br>Baiano<br>Mineiro<br>Pizza</p>
+    <p>Selecione a categoria:
+      <select multiple>
+        <option>Japonês</option>
+        <option>Indiano</option>
+        <option>Árabe</option>
+        <option>Chinês</option>
+        <option>Italiano</option>
+        <option>Pizza</option>
+      </select> 
 </div>
 <div  id="avaliacao" class='popup-content'>
-  <div class='popup-title'>Avaliação</div>
-  <p>Selecione a avaliação:
-      <select multiple>
-        <option>Todas</option>
+    <div class='popup-title'>Avaliação</div>
+    <p>Selecione a avaliação:
+      <select>
         <option>5 estrelas</option>
         <option>4 estrelas</option>
         <option>3 estrelas</option>
         <option>2 estrelas</option>
         <option>1 estrela</option>
       </select>
-      
 </div>
 <div  id="horario" class='popup-content'>
   <div class='popup-title'>Horário de Funcionamento</div>
   <p><br>Selecione o Horário</p>
+    <select multiple>
+        <option>Manhã</option>
+        <option>Tarde</option>
+        <option>Noite</option>
+    </select>
 </div>
+
 
 
 

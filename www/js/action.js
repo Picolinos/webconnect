@@ -56,7 +56,6 @@ $(function(){
 
 $(function(){
     var scrollStartPos=0;
-
     $(".panel").on("touchstart", function(event) {
         scrollStartPos=this.scrollTop+event.touches[0].pageY;
         event.stopPropagation();
@@ -71,3 +70,5 @@ $(function(){
         //seriaalgumacoisaaqui
     },false);
 });
+ 
+     
