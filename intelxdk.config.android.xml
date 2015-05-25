@@ -11,10 +11,10 @@
 <icon platform="android" src="assets/icon-mdpi.png" density="mdpi" width="48" height="48"/>
 <icon platform="android" src="assets/icon-hdpi.png" density="hdpi" width="72" height="72"/>
 <icon platform="android" src="assets/icon-xhdpi.png" density="xhdpi" width="96" height="96"/>
-<splash platform="android" src="assets/Splash.png" density="ldpi" width="320" height="426" orientation="portrait"/>
-<splash platform="android" src="assets/Splash2.png" density="mdpi" width="320" height="470" orientation="portrait"/>
-<splash platform="android" src="assets/Splash3.png" density="hdpi" width="480" height="640" orientation="portrait"/>
-<splash platform="android" src="assets/Splash4.png" density="xhdpi" width="720" height="960" orientation="portrait"/>
+<splash platform="android" src="assets/320.png" density="ldpi" width="320" height="426" orientation="portrait"/>
+<splash platform="android" src="assets/470.png" density="mdpi" width="320" height="470" orientation="portrait"/>
+<splash platform="android" src="assets/640.png" density="hdpi" width="480" height="640" orientation="portrait"/>
+<splash platform="android" src="assets/960.png" density="xhdpi" width="720" height="960" orientation="portrait"/>
 <preference name="android-minSdkVersion" value="10"/>
 <preference name="android-targetSdkVersion" value="19"/>
 <preference name="android-installLocation" value="auto"/>
