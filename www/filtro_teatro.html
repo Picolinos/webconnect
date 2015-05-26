@@ -1,18 +1,105 @@
+<a class="button botao filtros" href="#eventos">Aplicar</a>
 <br>
     <div class='selectedEvent'>
         <!--Selecionado:--> 
     </div>
     
     <!--Escolha por:-->
-   <ul class="list inset">
+  <ul class="list inset">
     <li class="widget uib_w_7" data-uib="app_framework/listitem" data-ver="1">
-        <a href="#uib_page_2" data-transition="fade">
+        <a href="#" class="popup" rel='localizacaoTeatro'>
             Localização:<br>
             <div class='selectedFilter'>Minha localização</div>
         </a>
     </li>
-    <li class="widget uib_w_6" data-uib="app_framework/listitem" data-ver="1">
-        <a href="#uib_page_3" data-transition="fade">Show</a>
+    <li class="widget uib_w_10" data-uib="app_framework/listitem" data-ver="1">
+        <a href="#" class="popup" rel='precoTeatro' >Preço</a>
+    </li>
+   <li class="widget uib_w_10" data-uib="app_framework/listitem" data-ver="1">
+        <a href="#" class="popup" rel='idiomaTeatro' >Idioma</a>
+    </li>
+    <li class="widget uib_w_10" data-uib="app_framework/listitem" data-ver="1">
+        <a href="#" class="popup" rel='classificacaoIndicativaTeatro' >Classificação Indicativa</a>
+    </li>
+    <li class="widget uib_w_10" data-uib="app_framework/listitem" data-ver="1">
+        <a href="#" class="popup" rel='empresaTeatro' >Empresa</a>
+    </li>
+    <li class="widget uib_w_10" data-uib="app_framework/listitem" data-ver="1">
+        <a href="#" class="popup" rel='generoTeatro' >Gênero</a>
     </li>
 </ul>
 <br>
+<div  id="localizacaoTeatro" class='popup-content'>
+  <div class='popup-title'>Localização</div>
+    <p>Selecione a distancia:
+      <select>
+        <option selected>Minha localização</option>
+        <option>3km</option>
+        <option>5km</option>
+        <option>10km</option>
+      </select> 
+</div>
+<div  id="precoTeatro" class='popup-content'>
+    <div class='popup-title'>Preço</div>
+    <br>
+    <br>
+    Selecionado: 
+    <br>
+    De: <input id="movie" type="number" value="0"/><br>
+    Até: <input id="movie" type="number" value="120"/>
+</div>
+<div  id="generoTeatro" class='popup-content'>
+  <div class='popup-title'>Gênero</div>
+    <p>Selecione o Gênero:
+      <select multiple>
+        <option>Suspense</option>
+        <option>Aventura</option>
+        <option>Comédia</option>
+        <option>Drama</option>
+        <option>Romance</option>
+        <option>Político</option>
+        <option>Ação</option>
+        <option>Musical</option>
+        <option>Ficção</option>
+        <option>Infantil</option>
+        <option>SandUp</option>
+      </select> 
+</div>
+<div  id="classificacaoIndicativaTeatro" class='popup-content'>
+  <div class='popup-title'>Classificação Indicativa</div>
+    <p>Selecione a Classificação Indicativa:
+      <select>
+        <option>18 anos</option>
+        <option>16 anos</option>
+        <option>14 anos</option>
+        <option>12 anos</option>
+        <option>Livre</option>
+      </select> 
+</div>
+<div  id="empresaTeatro" class='popup-content'>
+  <div class='popup-title'>Empresa</div>
+    <p>Selecione a Empresa:
+      <select>
+        <option>Cinemark</option>
+        <option>UCI</option>
+        <option>PlayArte</option>
+        <option>Cinépolis</option>
+        <option>Espaço Itau Unibanco</option>
+        <option>CenterPlex</option>
+      </select> 
+</div>
+<div  id="idiomaTeatro" class='popup-content'>
+  <div class='popup-title'>Idioma</div>
+    <p>Selecione o Idioma:
+      <select>
+        <option>protuguês</option>
+        <option>inglês</option>
+        <option>espanhol</option>
+        <option>francês</option>
+        <option>alemão</option>
+        <option>japonês</option>
+        <option>chinês</option>
+        <option>mímica</option>
+      </select> 
+</div>
+
