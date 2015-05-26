@@ -113,7 +113,7 @@ li .icon:before {
 .icon.upload:before {
 	content: "\74";
 }
-.icon.star:before {
+.icon.star-icon:before {
 	content: "\75";
 }
 .icon.heart:before {

@@ -34,7 +34,7 @@ function signIn(){
     });
 }
 function putPerfilName(nome){
-    $("#meu_perfil").html(nome);
+    $("#meu_perfil_btn").html(nome);
 }
 function signUp(){
     var username = $("#username_user").val();
