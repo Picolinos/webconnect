@@ -1,3 +1,5 @@
+
+<a class="button botao filtros" href="#eventos">Aplicar</a>
 <br>
     <div class='selectedEvent'>
         <!--Selecionado:--> 
@@ -5,14 +7,63 @@
     
     <!--Escolha por:-->
    <ul class="list inset">
-    <li class="widget uib_w_7" data-uib="app_framework/listitem" data-ver="1">
-        <a href="#uib_page_2" data-transition="fade">
-            Localização:<br>
-            <div class='selectedFilter'>Minha localização</div>
-        </a>
+        <li class="widget uib_w_6" data-uib="app_framework/listitem" data-ver="1">
+        <a href="#" class="popup" rel='categoriaPerto'>Categoria</a>
     </li>
-    <li class="widget uib_w_6" data-uib="app_framework/listitem" data-ver="1">
-        <a href="#uib_page_3" data-transition="fade">Show</a>
+       
+       <li class="widget uib_w_6" data-uib="app_framework/listitem" data-ver="1">
+        <a href="#" class="popup" rel='precoPerto' >Preço</a>
     </li>
-</ul>
+       
+       <li class="widget uib_w_6" data-uib="app_framework/listitem" data-ver="1">
+        <a href="#" class="popup" rel='avaliacaoPerto' >Avaliação</a>
+    </li>
+       
+       <li class="widget uib_w_6" data-uib="app_framework/listitem" data-ver="1">
+        <a href="#" class="popup" rel='horarioPerto' >Horário de Funcionamento</a>
+    </li>
+    </ul>
+<div  id="precoPerto" class='popup-content'>
+    <div class='popup-title'>Preço</div>
+    <br>
+    <br>
+    Selecionado: 
+    <br>
+    De: <input id="movie" type="number" value="0"/><br>
+    Até: <input id="movie" type="number" value="120"/>
+        
+</div>
+
+<div  id="categoriaPerto" class='popup-content'>
+  <div class='popup-title'>Categoria</div>
+    <p>Selecione a categoria:
+      <select multiple>
+        <option>Restaurantes</option>
+        <option>Show</option>
+        <option>Baladas</option>
+        <option>Cinemas</option>
+        <option>Teatro</option>
+        <option>Eventos</option>
+      </select> 
+</div>
+<div  id="avaliacaoPerto" class='popup-content'>
+    <div class='popup-title'>Avaliação</div>
+    <p>Selecione a avaliação:
+      <select>
+        <option>5 estrelas</option>
+        <option>4 estrelas</option>
+        <option>3 estrelas</option>
+        <option>2 estrelas</option>
+        <option>1 estrela</option>
+      </select>
+</div>
+<div  id="horarioPerto" class='popup-content'>
+  <div class='popup-title'>Horário de Funcionamento</div>
+  <p><br>Selecione o Horário</p>
+    <select multiple>
+        <option>Manhã</option>
+        <option>Tarde</option>
+        <option>Noite</option>
+    </select>
+</div>
 <br>
