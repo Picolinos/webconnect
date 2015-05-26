@@ -45,6 +45,7 @@ header{
     padding:3px;
     margin-top:5px;*/
     /*versão 2*/
+    overflow: hidden;
     background: rgb(51, 51, 51);
     padding: 7px;
     margin-top: 5px;
@@ -140,4 +141,54 @@ body div.overlay{
     
 }
 footer,.footer{display:none !important;}
- 
+
+/** detalhes **/
+.sobre-img{
+    float:left;
+    width:20%;
+}
+.sobre-img img{
+    width:100%;
+}
+.sobre-name-content{
+    float:left;
+    width:75%;
+    margin-left:4%;
+}
+.sobre-name,.sobre-site{
+    text-align: center;
+}
+.cleaner{
+clear:both;
+}
+.star{
+    float:left;
+    margin-left:10px;
+    width:30px;
+}
+.stars ,.small-stars{
+    margin:0px auto;
+    margin: 0 40px;
+}
+.small-stars .star{
+    width:15px !important;
+}
+.comentario-row{
+    border-top:1px solid lightgray;
+    margin-top:5px;
+}
+.comentario-user .icon{
+    text-align: center;
+}
+.comentario-user{
+    float:left;
+    width:20%;
+}
+.comentario-txt{
+    margin-left: 4%;
+    float:left;
+    width:75%;
+}
+#sucess_user{
+text-align: center;
+}
