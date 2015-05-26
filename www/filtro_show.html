@@ -1,3 +1,4 @@
+<a class="button botao filtros" href="#eventos">Aplicar</a>
 <br>
     <div class='selectedEvent'>
         <!--Selecionado:--> 
@@ -6,7 +7,7 @@
     <!--Escolha por:-->
    <ul class="list inset">
     <li class="widget uib_w_7" data-uib="app_framework/listitem" data-ver="1">
-        <a href="#uib_page_2" data-transition="fade">
+        <a href="#" class="popup" rel='localizacaoShow'>
             Localização:<br>
             <div class='selectedFilter'>Minha localização</div>
         </a>
@@ -24,17 +25,131 @@
 </ul>
 <br>
 
-
+<div  id="precoShow" class='popup-content'>
+    <div class='popup-title'>Preço</div>
+    <br>
+    Selecionado: 
+    De: <input id="movie" type="number" value="0"/><br>
+    Até: <input id="movie" type="number" value="120"/>
+        
+</div>
 
 <div  id="estiloMusicalShow" class='popup-content'>
   <div class='popup-title'>Estilo Musical</div>
   <p>Selecione o Estilo Musical</p>
+     <select multiple>
+        <option>Rock</option>
+        <option>Sertanejo</option>
+        <option>Forró</option>
+        <option>Axé</option>
+        <option>MPB</option>
+        <option>Bossa Nova</option>
+        <option>Rock</option>
+        <option>Pop Internacional</option>
+       </select> 
 </div>
 <div  id="mesShow" class='popup-content'>
   <div class='popup-title'>Mês</div>
   <p>Selecione o Mês</p>
+  <select multiple>
+        <option>Janeiro</option>
+        <option>Fevereiro</option>
+        <option>Março</option>
+        <option>Abril</option>
+        <option>Maio</option>
+        <option>Junho</option>
+        <option>Julho</option>
+        <option>Agosto</option>
+        <option>Setembro</option>
+        <option>Outubro</option>
+        <option>Novembro</option>
+        <option>Dezembro</option>
+    </select>
 </div>
 <div  id="precoShow" class='popup-content'>
   <div class='popup-title'>Preço</div>
   <p>Selecione seu preço</p>
 </div>
+
+
+<!--///////////////////////////////////////////////////////////////////////////////
+
+<a class="button botao filtros" href="#eventos">Aplicar</a>
+<br>
+    <div class='selectedEvent'>
+        <!--Selecionado: 
+    </div>-->
+    
+    <!--Escolha por:
+   <ul class="list inset">
+    <li class="widget uib_w_7" data-uib="app_framework/listitem" data-ver="1">
+        <a href='#' class="popup" rel='localizacaoShow' >
+            Localização:<br>
+            <div class='selectedFilter'>Minha localização</div>
+        </a>
+    </li>
+    <li class="widget uib_w_6" data-uib="app_framework/listitem" data-ver="1">
+        <a href='#' class="popup" rel='precoShow' >Preço</a>
+    </li>
+    <li class="widget uib_w_8" data-uib="app_framework/listitem" data-ver="1">
+        <a href="#" class="popup" rel='categoriaShow' >Categoria</a>
+    </li>
+       <li class="widget uib_w_9" data-uib="app_framework/listitem" data-ver="1">
+        <a href="#" class="popup" rel='avaliacaoShow' >Avaliação</a>
+    </li>
+       <li class="widget uib_w_10" data-uib="app_framework/listitem" data-ver="1">
+        <a href="#" class="popup" rel='horarioShow' >Horário de Funcionamento</a>
+    </li>
+    </ul>
+
+
+<div  id="precoShow" class='popup-content'>
+    <div class='popup-title'>Preço</div>
+    <br>
+    Selecionado: 
+    De: <input id="movie" type="number" value="0"/><br>
+    Até: <input id="movie" type="number" value="120"/>
+        
+</div>
+<div  id="localizacaoShow" class='popup-content'>
+  <div class='popup-title'>Localização</div>
+    <p>Selecione a distancia:
+      <select>
+        <option selected>Minha localização</option>
+        <option>3km</option>
+        <option>5km</option>
+        <option>10km</option>
+      </select> 
+</div>
+<div  id="categoriaShow" class='popup-content'>
+  <div class='popup-title'>Categoria</div>
+    <p>Selecione a categoria:
+      <select multiple>
+        <option>Japonês</option>
+        <option>Indiano</option>
+        <option>Árabe</option>
+        <option>Chinês</option>
+        <option>Italiano</option>
+        <option>Pizza</option>
+      </select> 
+</div>
+<div  id="avaliacaoShow" class='popup-content'>
+    <div class='popup-title'>Avaliação</div>
+    <p>Selecione a avaliação:
+      <select>
+        <option>5 estrelas</option>
+        <option>4 estrelas</option>
+        <option>3 estrelas</option>
+        <option>2 estrelas</option>
+        <option>1 estrela</option>
+      </select>
+</div>
+<div  id="horarioShow" class='popup-content'>
+  <div class='popup-title'>Horário de Funcionamento</div>
+  <p><br>Selecione o Horário</p>
+    <select multiple>
+        <option>Manhã</option>
+        <option>Tarde</option>
+        <option>Noite</option>
+    </select>
+</div>-->
